@@ -25,4 +25,31 @@ As well as completing the above requirements the robot should react to the ultra
 
 # Design
 ## Pseudocode Activities
-1. 
+### Activity A and B
+~~~
+BEGIN
+    INPUT Number
+    IF Number % 2 == 0 THEN
+        Display "Even number"
+    ELSE
+        Display "Odd number"
+    ENDIF
+END
+~~~
+~~~
+BEGIN
+    INPUT i
+    IF i = 1; i <=a; i++ THEN
+        f = f * 1
+    ELSE
+        Print f
+    ENDIF
+END
+~~~
+### Activity 2
+~~~
+BEGIN
+    INPUT book_price
+~~~
+## Flowchart Activities
+
