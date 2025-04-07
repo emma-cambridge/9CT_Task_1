@@ -18,3 +18,7 @@ ev3 = EV3Brick()
 
 # Write your program here.
 ev3.speaker.beep()
+
+# This is object_detection. I'll work out where to put it later
+while distancce >= 100:
+    Drive(100)

@@ -25,22 +25,15 @@ As well as completing the above requirements the robot should react to the ultra
 
 # Design
 ~~~
-BEGIN mainline_routine
-    Drive
-    IF obstacle is detected THEN
-        Stop driving
-        IF colour is red or yellow THEN
-            Capture object
-            Drag object
-        ELSE
-            turn 90 degrees
-        ENDIF
-    ELSE
-        ignore?
-    ENDIF
+BEGIN
+    drive forward
+    object_detection
+    colour_check
+    object_capture
+    object_drag 
 END
 ~~~
-
+![Mainline Routine Flowchart](mainline_routine.png "Mainline Routine")
 ~~~
 BEGIN colour_check
     INPUT colour sensor
@@ -51,14 +44,14 @@ BEGIN colour_check
     ENDIF
 END
 ~~~
+![Colour Check Flowchart](colour_check.png "Colour Check")
 ~~~
 BEGIN object_detection
-    IF distance > 100mm THEN
+    WHILE distance > 100mm
         INPUT distance
         Drive forward
-    ELSE
+    ENDWHILE
         Stop
-    ENDIF
 END
 ~~~
 
