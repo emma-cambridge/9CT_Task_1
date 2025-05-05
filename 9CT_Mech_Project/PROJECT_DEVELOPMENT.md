@@ -56,3 +56,30 @@ END
 ~~~
 
 ![Object Detection Flowchart](object_det.png "Object Detection")
+
+# Test Cases
+## Outline
+I want to create a program that will sense the colour of the block. It'll input the colour then decide if it is yellow, red, green, or blue. If it's blue or green it'll turn and if it's anything else it'll continue to capturing the object.
+
+## Testing
+I managed to get the colour sensing after some trial and error where I realised that I needed to add this line to the top of my code
+~~~
+from pybricks.parameters import Port, Color
+~~~
+so that the robot would understand what colour is. After that I managed to get the robot moving and the robot to stop when it sensed a green or blue block, with this code:
+~~~
+robot.drive(100, 0)
+
+while True:
+
+    while obstacle_sensor.distance() > 100:
+        robot.drive(100, 0)
+
+    if colour_sensor.color() == Color.GREEN:
+        stop()
+    elif colour_sensor.color() == Color.BLUE:
+        stop()
+    else:
+        ev3.speaker.beep()
+~~~
+However, after some testing I decided that I didn't actually want to implement a colour sensing function because the robot would skip through the if statement if it sensed any other colour, including the grey on the blocks. Overall I decided that the design was too fidley and had too much room for error, and decided to use the colour sensor to make sure the robot doesn't go off the line instead.
