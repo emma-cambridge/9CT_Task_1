@@ -36,7 +36,7 @@ while True:
         robot.turn(-50)
         robot.turn(-50)
 
-        robot.straight(450)
+        robot.straight(440)
 
         robot.turn(-45)
         robot.turn(-45)
@@ -44,5 +44,5 @@ while True:
 
         robot.straight(520)
 
-        robot.turn(-110)
-        robot.straight(130)
+        robot.turn(-100)
+        robot.straight(40)
