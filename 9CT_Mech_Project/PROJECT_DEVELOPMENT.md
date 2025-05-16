@@ -83,3 +83,18 @@ while True:
         ev3.speaker.beep()
 ~~~
 However, after some testing I decided that I didn't actually want to implement a colour sensing function because the robot would skip through the if statement if it sensed any other colour, including the grey on the blocks. Overall I decided that the design was too fidley and had too much room for error, and decided to use the colour sensor to make sure the robot doesn't go off the line instead.
+
+# Evaluation
+## Evelyn
+- 4/5 for effort: Evelyn helped with some of the coding and helped a lot with testing and debugging.
+- 3/5 for contribution: Evelyn helped me quite a bit with the testing but didn't do as much with the original code.
+- 5/5 for final test case: We all shared a final test case so I guess it was good??
+- 5/5 performance: Evelyn was super encouraging and I think she did everything we asked of her to her best ability throughout the project
+## Juliet
+- 4/5 for effort: Juliet was always really passionate about what she was doing and I think she really tried her best
+- 5/5 for contribution: Juliet was really good at coming up with ideas and her touch sensor idea was really helpful in getting enough sensors into the final project. She also made the weird stag beetle thing that picked up the blocks so we definitely couldn't have done the project without her
+- 5/5 for test case: Same as Evelyn
+- 4/5 for performance: Juliet's weird stag beetle thing was a little bit fragile but given the amount she contributed I think it's very fair to say that she had a really good performance throughout the project.
+
+## Final Evaluation Questions
+I don't think I did a great job at fulfilling the requirements outline, if I'm being honest. After the first round of testing I realised that the requirements I had set out were unreasonable and that I wouldn't be able to code a working program within the time limit if I followed this outline so I pivoted completely and hardcoded the entire program, so while I didn't 
